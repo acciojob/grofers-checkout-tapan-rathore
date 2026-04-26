@@ -5,22 +5,23 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	const prices = document.querySelectorAll(".prices");
+	const prices = document.querySelectorAll(".price");
 	
 	let sum=0;
 	for(let price of prices){
 		sum+=Number(price.innerText);
 	}
 
-	const totalPrice = document.createElement("tr");
+	const tr = document.createElement("tr");
 	const td = document.createElement("td");
 		
 	td.colSpan = 2; 
-	td.innerText = `Total Price: ${sum}`;
+	td.className = "price"
+	td.innerText = sum;
 	
-	totalPrice.append(td)
-	tbody.append(totalPrice);
-	// console.log(sum, totalPrice)
+	tr.append(td)
+	tbody.append(tr);
+	// console.log(sum, tr)
 	getSumBtn.disabled = true;
 };
 
