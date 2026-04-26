@@ -17,6 +17,7 @@ const getSum = () => {
 		
 	td.colSpan = 2; 
 	td.className = "prices"
+	td.id = "ans";
 	td.innerText = sum;
 	
 	tr.append(td)
