@@ -5,18 +5,18 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	const prices = document.querySelectorAll(".price");
+	const prices = document.querySelectorAll(".prices");
 	
 	let sum=0;
 	for(let price of prices){
-		sum+=Number(price.innerText);
+		sum+=Number(prices.innerText);
 	}
 
 	const tr = document.createElement("tr");
 	const td = document.createElement("td");
 		
 	td.colSpan = 2; 
-	td.className = "price"
+	td.className = "prices"
 	td.innerText = sum;
 	
 	tr.append(td)
