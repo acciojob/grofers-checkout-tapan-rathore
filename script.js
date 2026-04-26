@@ -1,5 +1,5 @@
 const getSumBtn = document.createElement("button");
-const table = document.querySelector("table")
+const tbody = document.querySelector("tbody")
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
@@ -20,7 +20,7 @@ const getSum = () => {
 	td.innerText = `Total Price: ${sum}`;
 	
 	totalPrice.append(td)
-	table.append(totalPrice);
+	tbody.append(totalPrice);
 	// console.log(sum, totalPrice)
 	getSumBtn.disabled = true;
 };
