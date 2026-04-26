@@ -13,14 +13,13 @@ const getSum = () => {
 	}
 
 	const totalPrice = document.createElement("tr");
-	const td1 = document.createElement("td");
-	const td2 = document.createElement("td");
-	td1.className = "item";
-	td2.className = "prices"
+	const td = document.createElement("td");
+	td.className = "prices"
 		
-	td1.innerText = "Total Price";
-	td2.innerText = sum;
-	totalPrice.append(td1, td2)
+	td.colSpan = 2; 
+	td.innerText = `Total Price: ${sum}`;
+	
+	totalPrice.append(td)
 	table.append(totalPrice);
 	// console.log(sum, totalPrice)
 	getSumBtn.disabled = true;
