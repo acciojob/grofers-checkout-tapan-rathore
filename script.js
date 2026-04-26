@@ -14,7 +14,6 @@ const getSum = () => {
 
 	const totalPrice = document.createElement("tr");
 	const td = document.createElement("td");
-	td.className = "prices"
 		
 	td.colSpan = 2; 
 	td.innerText = `Total Price: ${sum}`;
