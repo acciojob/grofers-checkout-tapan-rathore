@@ -9,7 +9,7 @@ const getSum = () => {
 	
 	let sum=0;
 	for(let price of prices){
-		sum+=Number(prices.innerText);
+		sum+=Number(price.innerText);
 	}
 
 	const tr = document.createElement("tr");
